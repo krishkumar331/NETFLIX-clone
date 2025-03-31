@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="icon" href="https://images.ctfassets.net/y2ske730sjqp/4aEQ1zAUZF5pLSDtfviWjb/ba04f8d5bd01428f6e3803cc6effaf30/Netflix_N.png?w=300" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .hero-gradient {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Header -->
+  <header class="relative">
+    <nav class="flex justify-between items-center py-6 px-12 md:px-24 absolute w-full z-10">
+      <div>
+        <img src="netflix.svg" class="w-32" alt="Netflix">
+      </div>
+      <div class="flex items-center">
+        <select class="bg-transparent border border-white text-white px-4 py-1 mr-4 rounded">
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <button class="bg-red-600 text-white px-4 py-1 rounded">Sign In</button>
+      </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg')"></div>
+      <div class="absolute inset-0 hero-gradient"></div>
+      
+      <div class="relative text-center px-4 max-w-3xl z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Unlimited movies, TV shows, and more.</h1>
+        <h2 class="text-xl md:text-2xl mb-6">Watch anywhere. Cancel anytime.</h2>
+        <p class="text-lg mb-6">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <input type="email" placeholder="Email address" class="px-4 py-3 w-full md:w-96 mb-2 md:mb-0 text-black">
+          <button class="bg-red-600 text-white px-6 py-3 text-lg md:ml-2">Get Started &gt;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Features Section -->
+  <section class="border-t-8 border-gray-800">
+    <div class="max-w-6xl mx-auto py-16 px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">Enjoy on your TV.</h2>
+        <p class="text-lg md:text-xl">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+      </div>
+      <div class="md:w-1/2 relative">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="relative z-10" alt="TV">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 z-0">
+          <video class="w-full h-full" autoplay playsinline muted loop>
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="border-t-8 border-gray-800">
+    <div class="max-w-6xl mx-auto py-16 px-4 flex flex-col md:flex-row-reverse items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">Download your shows to watch offline.</h2>
+        <p class="text-lg md:text-xl">Save your favorites easily and always have something to watch.</p>
+      </div>
+      <div class="md:w-1/2 relative">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Mobile">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black border-2 border-gray-600 rounded-lg p-2 w-3/5 flex items-center">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" class="w-12 mr-4" alt="Stranger Things">
+          <div>
+            <div class="font-bold">Stranger Things</div>
+            <div class="text-blue-500 text-sm">Downloading...</div>
+          </div>
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" class="w-12 ml-auto" alt="Download">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="border-t-8 border-gray-800 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-5xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+      
+      <div class="mb-2">
+        <button class="w-full bg-gray-800 p-4 text-left text-xl">
+          What is Netflix?
+          <span class="float-right">+</span>
+        </button>
+        <div class="hidden bg-gray-800 mt-px p-4">
+          Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+        </div>
+      </div>
+      
+      <div class="mb-2">
+        <button class="w-full bg-gray-800 p-4 text-left text-xl">
+          How much does Netflix cost?
+          <span class="float-right">+</span>
+        </button>
+        <div class="hidden bg-gray-800 mt-px p-4">
+          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $8.99 to $17.99 a month. No extra costs, no contracts.
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-lg mb-4">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <input type="email" placeholder="Email address" class="px-4 py-3 w-full md:w-96 mb-2 md:mb-0 text-black">
+          <button class="bg-red-600 text-white px-6 py-3 text-lg md:ml-2">Get Started &gt;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="border-t-8 border-gray-800 py-16 text-gray-500">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="mb-8">Questions? Call 1-844-505-2993</p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <ul>
+          <li class="mb-3"><a href="#" class="hover:underline">FAQ</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Investor Relations</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Privacy</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li class="mb-3"><a href="#" class="hover:underline">Help Center</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Jobs</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Cookie Preferences</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Legal Notices</a></li>
+        </ul>
+        <ul>
+          <li class="mb-3"><a href="#" class="hover:underline">Account</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Ways to Watch</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Corporate Information</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li class="mb-3"><a href="#" class="hover:underline">Media Center</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Terms of Use</a></li>
+          <li class="mb-3"><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <select class="bg-transparent border border-gray-600 text-white px-4 py-1 mt-8 rounded">
+        <option>English</option>
+        <option>Spanish</option>
+      </select>
+      
+      <p class="mt-6">Netflix United States</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Add functionality to FAQ accordion
+    document.querySelectorAll('.bg-gray-800 button').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle('hidden');
+        button.querySelector('span').textContent = content.classList.contains('hidden') ? '+' : '×';
+      });
+    });
+  </script>
+</body>
+</html>
